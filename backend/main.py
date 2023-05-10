@@ -51,7 +51,7 @@ async def say_hello():
 async def say_hello(filename):
     import query
     file_path = filename
-    return FileResponse(file_path, filename=file_path)
+    return FileResponse(file_path, file_path=file_path)
 
 
 # Build a file
@@ -114,9 +114,6 @@ async def create_item(prompt: Prompt):
         temperature=0.2
     )
 
-    # Write output to file
-    file = open("query.py", "w")
-    file.write(query["choices"][0]["text"])
-    file.close()
-
+    with open("query.py", "w") as file:
+        file.write(query["choices"][0]["text"])
     return prompt
