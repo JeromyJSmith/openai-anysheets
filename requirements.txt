@@ -8,7 +8,7 @@ base58==2.1.1
 bitarray==2.6.0
 black==21.11b1
 bleach==5.0.1
-certifi==2022.9.24
+certifi==2022.12.7
 channels==4.0.0
 charset-normalizer==2.1.1
 click==8.1.3
