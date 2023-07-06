@@ -89,7 +89,7 @@ requests-toolbelt==0.10.1
 rfc3986==1.5.0
 rlp==2.0.1
 scikit-learn==1.1.3
-scipy==1.9.3
+scipy==1.10.0
 semver==2.13.0
 six==1.16.0
 smmap==5.0.0
